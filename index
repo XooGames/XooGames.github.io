@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="XOO Games is an independent game studio creating original games for PC and mobile.">
+<title>XOO Games | Independent Game Studio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+*{box-sizing:border-box}
+body{margin:0;background:#090a0f;color:#f5f5fa;font-family:'DM Sans',sans-serif;line-height:1.6}
+.wrap{width:min(1120px,90%);margin:auto}
+header{border-bottom:1px solid #252631;background:#0b0c12}
+nav{height:78px;display:flex;align-items:center;justify-content:space-between}
+.logo{font:700 24px 'Space Grotesk';letter-spacing:3px}
+.logo span{color:#a88bff}
+nav a{color:#ddd;text-decoration:none;margin-left:25px;font-size:14px}
+.hero{padding:115px 0 90px;background:radial-gradient(ellipse at 85% 20%,#39275c 0%,transparent 45%)}
+.tag{color:#6bd9d0;text-transform:uppercase;letter-spacing:4px;font-size:12px;font-weight:bold}
+h1{font:700 clamp(48px,8vw,88px)/1.02 'Space Grotesk';letter-spacing:-5px;margin:25px 0}
+h1 span{color:#ad94ff}
+.hero p,.intro{color:#a6a8b8;max-width:620px;font-size:17px}
+.btn{display:inline-block;margin:25px 10px 0 0;padding:13px 24px;border-radius:30px;background:#eeeaff;color:#15121e;text-decoration:none;font-weight:bold}
+.btn.alt{background:transparent;color:white;border:1px solid #555}
+section{padding:75px 0}
+h2{font:600 43px 'Space Grotesk';letter-spacing:-2px;margin:10px 0 25px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{background:#141620;border:1px solid #292b38;border-radius:18px;overflow:hidden}
+.art{height:260px;display:grid;place-items:center;font:700 36px 'Space Grotesk';letter-spacing:-2px}
+.peri{background:radial-gradient(ellipse,#652d42,#19121d 65%,#101018)}
+.spirito{background:radial-gradient(ellipse,#17605e,#14202c 65%,#101018)}
+.info{padding:25px}
+.info h3{font:600 26px 'Space Grotesk';margin:8px 0}
+.info p{color:#a6a8b8}
+.label{font-size:11px;letter-spacing:2px;color:#72d9d0;text-transform:uppercase}
+.platforms{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.platform{padding:22px;background:#141620;border:1px solid #292b38;border-radius:12px}
+.platform p{color:#a6a8b8;font-size:13px}
+.about{background:linear-gradient(110deg,#211a35,#111923);border:1px solid #343044;border-radius:20px;padding:40px}
+footer{border-top:1px solid #292b38;padding:40px 0;color:#999;font-size:13px}
+footer a{color:#ccc;text-decoration:none;margin-right:18px}
+@media(max-width:700px){nav a{margin-left:10px;font-size:12px}.cards{grid-template-columns:1fr}.platforms{grid-template-columns:repeat(2,1fr)}h1{letter-spacing:-3px}.art{height:210px}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<nav>
+<div class="logo">XOO<span>GAMES</span></div>
+<div>
+<a href="#games">Games</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="wrap">
+<div class="tag">Independent Game Studio</div>
+<h1>We create worlds.<br>We make <span>games.</span></h1>
+<p>XOO Games is an independent game studio building original gaming experiences, memorable worlds and stories for players around the world.</p>
+<a class="btn" href="#games">Explore Our Games</a>
+<a class="btn alt" href="#about">Discover XOO Games</a>
+</div>
+</section>
+
+<section id="games">
+<div class="wrap">
+<div class="tag">Our Portfolio</div>
+<h2>Games by XOO Games</h2>
+<p class="intro">Explore our projects across PC and mobile platforms.</p>
+<div class="cards">
+<div class="card">
+<div class="art peri">PICHHAL PERI</div>
+<div class="info">
+<div class="label">PC · HORROR · STEAM</div>
+<h3>Pichhal Peri</h3>
+<p>A horror experience inspired by folklore. Enter a world of mystery, fear and the unknown.</p>
+<a class="btn alt" href="games/pichhal-peri/">Explore Game</a>
+</div>
+</div>
+<div class="card">
+<div class="art spirito">SPIRITO</div>
+<div class="info">
+<div class="label">MOBILE GAME</div>
+<h3>Spirito</h3>
+<p>Discover our mobile gaming project. More information and official store links coming soon.</p>
+<a class="btn alt" href="games/spirito/">Explore Game</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap">
+<div class="about">
+<div class="tag">About the Studio</div>
+<h2>Independent thinking.<br>Original experiences.</h2>
+<p class="intro">We are XOO Games. Our goal is to create distinctive games with immersive environments, engaging gameplay and memorable experiences.</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<div class="tag">Where We Create</div>
+<h2>Platforms</h2>
+<div class="platforms">
+<div class="platform"><strong>PC</strong><p>PC gaming experiences</p></div>
+<div class="platform"><strong>Steam</strong><p>PC distribution</p></div>
+<div class="platform"><strong>Android</strong><p>Mobile games</p></div>
+<div class="platform"><strong>iOS</strong><p>Future platform plans</p></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer id="contact">
+<div class="wrap">
+<div class="logo">XOO<span>GAMES</span></div>
+<p>Independent Game Studio</p>
+<p>Business and general enquiries: <a href="mailto:xoogamesco@gmail.com">xoogamesco@gmail.com</a></p>
+<p><a href="legal/">Legal Centre</a> <a href="games/">Our Games</a></p>
+<p>© <span id="year"></span> XOO Games. All rights reserved.</p>
+</div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
