@@ -63,6 +63,34 @@ footer{border-top:1px solid var(--line);padding:38px 0;color:#999;font-size:13px
 footer a{color:#ccc;text-decoration:none;margin-right:18px}
 footer .footlinks{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
 @media(max-width:760px){nav{padding:16px 0;align-items:flex-start;flex-direction:column}.links{gap:14px!important}.cards,.grid-two{grid-template-columns:1fr}.platforms{grid-template-columns:repeat(2,1fr)}h1{letter-spacing:-2px}.art{height:210px}.hero{padding:80px 0 65px}.gallery{grid-template-columns:1fr}}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.gallery .placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 14px;
+}
+
+.gallery .placeholder img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+}
+
+@media (max-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
 </style>
 </head>
 <body class="spirito-page">
@@ -81,8 +109,17 @@ footer .footlinks{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
 <p class="intro">Spirito is an upcoming mobile game from XOO Games. We’ll share its world, gameplay, screenshots and launch information here as development progresses.</p></div>
 <div class="panel"><div class="tag">Game Details</div><h3>Spirito</h3><p><strong>Developer:</strong> XOO Games</p><p><strong>Platform:</strong> Mobile</p><p><strong>Status:</strong> Coming Soon</p><p><strong>Store links:</strong> Not announced yet</p></div></div></section>
 <section><div class="wrap"><div class="tag">Gallery</div><h2>First look</h2><p class="intro">Official Spirito screenshots and artwork will be added here when ready.</p>
-<div class="gallery"><div class="placeholder"><div><strong>Artwork / Screenshot 01</strong>Official Spirito image coming soon</div></div><div class="placeholder"><div><strong>Artwork / Screenshot 02</strong>Official Spirito image coming soon</div></div></div>
-</div></section>
+<div class="gallery">
+    <div class="placeholder">
+        <img src="/games/spirito/screenshots/spirito-1.jpg"
+             alt="Spirito official gameplay screenshot 1">
+    </div>
+
+    <div class="placeholder">
+        <img src="/games/spirito/screenshots/spirito-2.jpg"
+             alt="Spirito official gameplay screenshot 2">
+    </div>
+</div></div></section>
 <section><div class="wrap"><div class="tag">Watch</div><h2>Gameplay trailer</h2><div class="placeholder"><div><strong>Trailer Coming Soon</strong>We’ll add the official trailer here.</div></div></div></section>
 </main>
 <footer><div class="wrap"><a class="logo" href="/">XOO<span>GAMES</span></a><div class="footlinks"><a href="/">XOO Games Home</a><a href="/games/pichhal-peri/">Pichhal Peri</a><a href="mailto:xoogamesco@gmail.com">Contact</a></div><p>© <span data-year></span> XOO Games. All rights reserved.</p></div></footer>
