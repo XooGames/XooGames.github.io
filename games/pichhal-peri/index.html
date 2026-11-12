@@ -63,6 +63,36 @@ footer{border-top:1px solid var(--line);padding:38px 0;color:#999;font-size:13px
 footer a{color:#ccc;text-decoration:none;margin-right:18px}
 footer .footlinks{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
 @media(max-width:760px){nav{padding:16px 0;align-items:flex-start;flex-direction:column}.links{gap:14px!important}.cards,.grid-two{grid-template-columns:1fr}.platforms{grid-template-columns:repeat(2,1fr)}h1{letter-spacing:-2px}.art{height:210px}.hero{padding:80px 0 65px}.gallery{grid-template-columns:1fr}}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.gallery .placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 14px;
+}
+
+.gallery .placeholder img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+}
+
+/* Mobile screens */
+@media (max-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
 </style>
 </head>
 <body class="">
