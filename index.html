@@ -63,6 +63,61 @@ footer{border-top:1px solid var(--line);padding:38px 0;color:#999;font-size:13px
 footer a{color:#ccc;text-decoration:none;margin-right:18px}
 footer .footlinks{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
 @media(max-width:760px){nav{padding:16px 0;align-items:flex-start;flex-direction:column}.links{gap:14px!important}.cards,.grid-two{grid-template-columns:1fr}.platforms{grid-template-columns:repeat(2,1fr)}h1{letter-spacing:-2px}.art{height:210px}.hero{padding:80px 0 65px}.gallery{grid-template-columns:1fr}}
+
+/* Your existing CSS remains above */
+
+/* Footer Games Dropdown */
+.footer-dropdown {
+    position: relative;
+}
+
+.footer-dropdown-toggle {
+    display: inline-block;
+}
+
+.footer-dropdown-menu {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    min-width: 200px;
+    padding: 8px;
+    background: #141620;
+    border: 1px solid #292b38;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px #0008;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: .2s ease;
+    z-index: 100;
+}
+
+.footer-dropdown:hover .footer-dropdown-menu,
+.footer-dropdown:focus-within .footer-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.footer-dropdown-menu a {
+    display: block;
+    padding: 10px 12px;
+    margin: 0;
+    border-radius: 7px;
+    color: #eee;
+}
+
+.footer-dropdown-menu a:hover {
+    background: #242535;
+    color: var(--cyan);
+}
+
+.footer-dropdown-menu small {
+    display: block;
+    color: var(--muted);
+    font-size: 11px;
+}
+
 </style>
 </head>
 <body class="">
