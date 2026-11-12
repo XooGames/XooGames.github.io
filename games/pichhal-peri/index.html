@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Pichhal Peri is a folklore-inspired PC horror game from XOO Games. Play the public demo on Steam.">
+<meta name="theme-color" content="#090a0f">
+<title>Pichhal Peri | XOO Games</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+:root{--bg:#090a0f;--panel:#141620;--line:#292b38;--muted:#a6a8b8;--purple:#ad94ff;--cyan:#72d9d0;--white:#f5f5fa}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;line-height:1.65}
+a{color:inherit}
+.wrap{width:min(1120px,90%);margin:auto}
+header{border-bottom:1px solid #252631;background:#0b0c12}
+nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{font:700 24px 'Space Grotesk';letter-spacing:2px;text-decoration:none;white-space:nowrap}
+.logo span{color:var(--purple)}
+nav .links{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+nav a:not(.logo){color:#ddd;text-decoration:none;font-size:14px}
+nav a:hover,footer a:hover{color:var(--cyan)}
+.hero{padding:105px 0 88px;background:radial-gradient(ellipse at 85% 20%,#39275c 0%,transparent 45%)}
+.hero-game{padding:90px 0;background:radial-gradient(ellipse at 80% 20%,#49243b 0%,transparent 48%)}
+.hero-spirito{background:radial-gradient(ellipse at 80% 20%,#145b59 0%,transparent 48%)}
+.tag{color:var(--cyan);text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:700}
+h1{font:700 clamp(44px,7vw,78px)/1.04 'Space Grotesk';letter-spacing:-4px;margin:22px 0}
+h1 span{color:var(--purple)}
+h2{font:600 clamp(30px,4vw,43px)/1.15 'Space Grotesk';letter-spacing:-2px;margin:10px 0 22px}
+h3{font:600 25px 'Space Grotesk';margin:8px 0}
+p{margin:10px 0}
+.lead,.intro{color:var(--muted);max-width:700px;font-size:17px}
+.btn{display:inline-block;margin:22px 10px 0 0;padding:12px 23px;border-radius:30px;background:#eeeaff;color:#15121e;text-decoration:none;font-weight:700;border:1px solid transparent}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.btn.alt{background:transparent;color:white;border-color:#555}
+.btn.disabled{opacity:.55;cursor:not-allowed}
+section{padding:72px 0}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.card,.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.art{height:255px;display:grid;place-items:center;text-align:center;padding:24px;font:700 clamp(28px,4vw,42px)/1.1 'Space Grotesk';letter-spacing:-2px;text-shadow:0 4px 25px #000}
+.peri-art{background:radial-gradient(ellipse at 50% 48%,#9a4056 0%,#3b2035 35%,#19121d 70%,#101018 100%)}
+.spirito-art{background:radial-gradient(ellipse at 50% 48%,#37b6a5 0%,#17605e 28%,#14202c 68%,#101018 100%)}
+.info{padding:25px}
+.info p{color:var(--muted)}
+.label{font-size:11px;letter-spacing:2px;color:var(--cyan);text-transform:uppercase;font-weight:700}
+.status{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border:1px solid #347c70;background:#14352f;color:#9af0d8;border-radius:30px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.status.soon{border-color:#66539a;background:#29213d;color:#d2c2ff}
+.status.review{border-color:#79643a;background:#382e19;color:#f5d99b}
+.meta{display:flex;gap:9px;flex-wrap:wrap;margin:15px 0}
+.grid-two{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:start}
+.panel{padding:26px}
+.placeholder{min-height:210px;border:1px dashed #55596b;border-radius:14px;background:linear-gradient(135deg,#171923,#10121b);display:grid;place-items:center;text-align:center;padding:22px;color:#a6a8b8}
+.placeholder strong{display:block;color:#e8e7f2;font:600 19px 'Space Grotesk';margin-bottom:6px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.gallery .placeholder{min-height:180px}
+.platforms{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.platform{padding:22px;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.platform p{color:var(--muted);font-size:13px}
+.about{background:linear-gradient(110deg,#211a35,#111923);border:1px solid #343044;border-radius:20px;padding:40px}
+.note{border-left:3px solid var(--cyan);padding:12px 16px;background:#101820;color:var(--muted);border-radius:0 10px 10px 0}
+footer{border-top:1px solid var(--line);padding:38px 0;color:#999;font-size:13px}
+footer a{color:#ccc;text-decoration:none;margin-right:18px}
+footer .footlinks{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
+@media(max-width:760px){nav{padding:16px 0;align-items:flex-start;flex-direction:column}.links{gap:14px!important}.cards,.grid-two{grid-template-columns:1fr}.platforms{grid-template-columns:repeat(2,1fr)}h1{letter-spacing:-2px}.art{height:210px}.hero{padding:80px 0 65px}.gallery{grid-template-columns:1fr}}
+</style>
+</head>
+<body class="">
+<header><div class="wrap"><nav>
+<a class="logo" href="/">XOO<span>GAMES</span></a>
+<div class="links"><a href="/">Home</a><a href="/#games">Games</a><a href="/#about">About</a><a href="/#contact">Contact</a></div>
+</nav></div></header>
+<main>
+<section class="hero-game"><div class="wrap">
+<div class="tag">XOO Games · PC Horror</div><div class="meta"><span class="status">Demo Available</span><span class="status review">Full Game in Steam Review</span></div>
+<h1>Pichhal <span>Peri.</span></h1>
+<p class="lead">Step into a world shaped by folklore, fear and the unknown. Explore the mystery of Pichhal Peri in this atmospheric horror experience from XOO Games.</p>
+<a class="btn" href="https://store.steampowered.com/app/4700000/Pichhal_Peri/" target="_blank" rel="noopener">Play the Demo on Steam</a>
+<a class="btn alt" href="https://store.steampowered.com/app/4700000/Pichhal_Peri/" target="_blank" rel="noopener">Wishlist on Steam</a>
+<p class="note">The public demo is downloadable. The full game has been submitted to Steam for review. The launch date will be announced after the review process is complete.</p>
+</div></section>
+<section><div class="wrap grid-two">
+<div><div class="tag">About the Game</div><h2>A folklore horror experience</h2>
+<p class="intro">Pichhal Peri is a PC horror game inspired by folklore. Enter an unsettling world, uncover its mysteries and face the unknown. More story and gameplay details will be shared as the game approaches release.</p>
+</div>
+<div class="panel"><div class="tag">Game Details</div><h3>Pichhal Peri</h3>
+<p><strong>Developer:</strong> XOO Games</p><p><strong>Platform:</strong> PC</p><p><strong>Store:</strong> Steam</p><p><strong>Availability:</strong> Public demo downloadable</p><p><strong>Full game:</strong> Submitted for Steam review</p><p><strong>Release date:</strong> To be announced</p>
+</div></div></section>
+<section><div class="wrap"><div class="tag">Gallery</div><h2>Screenshots</h2><p class="intro">Official gameplay screenshots will appear here. Replace these placeholders with your approved in-game captures before publishing.</p>
+<div class="gallery"><div class="placeholder"><div><strong>Screenshot 01</strong>Replace with an official Pichhal Peri screenshot</div></div><div class="placeholder"><div><strong>Screenshot 02</strong>Replace with an official Pichhal Peri screenshot</div></div><div class="placeholder"><div><strong>Screenshot 03</strong>Replace with an official Pichhal Peri screenshot</div></div><div class="placeholder"><div><strong>Screenshot 04</strong>Replace with an official Pichhal Peri screenshot</div></div></div>
+</div></section>
+<section><div class="wrap"><div class="tag">Watch</div><h2>Trailer</h2><div class="placeholder"><div><strong>Official Trailer Coming Soon</strong>Add your YouTube trailer embed here when it is ready.</div></div></div></section>
+<section><div class="wrap about"><div class="tag">Ready to enter?</div><h2>Play the demo.</h2><p class="intro">Download the public demo and wishlist Pichhal Peri on Steam to follow the full game's release.</p>
+<a class="btn" href="https://store.steampowered.com/app/4700000/Pichhal_Peri/" target="_blank" rel="noopener">Open Steam Page</a>
+</div></section>
+</main>
+<footer><div class="wrap"><a class="logo" href="/">XOO<span>GAMES</span></a><div class="footlinks"><a href="/">XOO Games Home</a><a href="/games/spirito/">Spirito</a><a href="mailto:xoogamesco@gmail.com">Contact</a></div><p>© <span data-year></span> XOO Games. All rights reserved.</p></div></footer>
+<script>document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());</script>
+</body>
+</html>
