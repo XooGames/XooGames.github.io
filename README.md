@@ -72,31 +72,6 @@ The following legal documents are published on the official XOO Games website:
 
 These documents provide information about applicable privacy practices, services, purchases, and terms of use.
 
-## Repository Structure
-
-```text
-XooGames.github.io/
-│
-├── index.html
-│
-├── games/
-│   ├── pichhal-peri/
-│   │   ├── index.html
-│   │   └── screenshots/
-│   │
-│   └── spirito/
-│       ├── index.html
-│       └── screenshots/
-│
-├── legal/
-│   ├── privacy-policy/
-│   │   └── index.html
-│   │
-│   └── terms-of-service/
-│       └── index.html
-│
-└── README.md
-```
 
 ## Contact
 
