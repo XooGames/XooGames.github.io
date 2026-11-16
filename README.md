@@ -37,7 +37,7 @@ An atmospheric horror experience built around mystery, tension, and supernatural
 - [Watch Official Trailer](https://www.youtube.com/watch?v=LycEYX7DpxI&t=1s)
 - [Visit Game Page](https://xoogames.github.io/games/pichhal-peri/)
 
-**Current Status:** Demo Available · Full Game in Steam Review
+**Current Status:** Released on 14 Feb 2026 Buy Now and Experiance to new Horror game.
 
 ### Spirito
 
@@ -49,6 +49,18 @@ Explore a magical world, navigate dangerous obstacles, collect glowing spirits, 
 - [Visit Game Page](https://xoogames.github.io/games/spirito/)
 
 **Current Status:** Coming Soon
+
+### Ripple Bloom
+
+**Platform:** Android / Mobile  
+**Genre:** Ripple Based Grid Puzzle Game 
+
+Solve the New style of Puzzle Based on Ripple Grid with relaxing Music of the Game
+
+- [Visit Game Page](https://xoogames.github.io/games/RippleBloom/)
+
+**Current Status:** Release Soon
+
 
 ## Official Website
 
